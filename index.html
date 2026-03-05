@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Prompt Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <p class="eyebrow">Daily Creative Spark</p>
+        <h1>Journal + Drawing Prompts</h1>
+        <p class="subtext">New ideas every day. Refresh until something clicks.</p>
+      </header>
+
+      <section class="card journal-card" aria-labelledby="journal-heading">
+        <div class="card-head">
+          <h2 id="journal-heading">Journal Prompt</h2>
+          <button id="refresh-journal" class="btn" type="button">Refresh</button>
+        </div>
+        <p id="journal-prompt" class="prompt-text"></p>
+      </section>
+
+      <section class="card drawing-card" aria-labelledby="drawing-heading">
+        <div class="card-head">
+          <h2 id="drawing-heading">Drawing Idea</h2>
+          <button id="refresh-drawing" class="btn" type="button">Refresh</button>
+        </div>
+        <p id="drawing-prompt" class="prompt-text"></p>
+      </section>
+
+      <button id="refresh-all" class="btn btn-wide" type="button">Refresh Both</button>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
